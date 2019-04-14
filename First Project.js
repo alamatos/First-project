@@ -1,6 +1,6 @@
 const a= "bom dia"
 console.log(a)
 
-var b= "Boa tarde..."
+var sb= "Boa tarde..."
 
-console.log(b)
+console.log(sb)
