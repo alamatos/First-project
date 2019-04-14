@@ -1,9 +1,9 @@
 const as= "bom dia"
 console.log(as)
 
-var bs= "Boa tarde..."
+var bss= "Boa tarde..."
 
 console.log(bs)
-var sb= "Boa noite..."
+var sbs= "Boa noite..."
 
 console.log(sb)
