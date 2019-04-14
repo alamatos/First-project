@@ -1,5 +1,5 @@
-const a= "bom dia"
-console.log(a)
+const sa= "bom dia"
+console.log(sa)
 
 var bs= "Boa tarde..."
 
