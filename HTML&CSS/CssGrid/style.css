@@ -1,0 +1,20 @@
+.grid{
+    display:flex;
+    border:2px solid dodgerblue;
+    text-align: center;
+    margin: 0;
+    font-size:30px;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(4,80%) 50%;
+} 
+#grid5 {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+}
