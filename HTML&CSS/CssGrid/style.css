@@ -1,3 +1,8 @@
+html, body{
+    height: calc(100%-40px);
+    margin:20px;
+
+}
 .grid{
     display:flex;
     border:2px solid dodgerblue;
@@ -11,10 +16,25 @@
     display: grid;
     grid-template-columns: repeat(3,33%);
     grid-template-rows: repeat(4,80%) 50%;
+    grid-gap: 10px 20px;
 } 
 #grid5 {
     grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 3/ span 2;
+}
+
+#grid10,#grid11 {
+    /* row-start, column-start, row-end, column-end */
+    /* grid-column-start: 1;
     grid-column-end: span 2;
-    grid-row-start: 3;
-    grid-row-end: span 2;
+    grid-row-start: 5;
+    grid-row-end: span 2; */
+    /* from the 4 lines above to only one */
+    grid-area: 5 / 1 / span 2 / span 2;
+}
+
+#grid10:hover{
+    z-index:1;
+    background-color: grey;
 }
