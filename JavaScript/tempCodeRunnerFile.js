@@ -1,0 +1,1 @@
+var BMI = weight /(height^2)
