@@ -1,0 +1,30 @@
+body{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0px;
+    justify-content: space-around;
+    
+}
+div{
+    margin:10px 0 10px 10px;
+    width:150px;
+    text-align: center;
+   
+}
+#first {
+    background-color:dodgerblue;
+   
+    }
+#second {
+    background-color:darkgray;
+}
+#third {
+    background-color:seagreen;
+}
+#forth {
+    background-color:crimson;
+}
+#fifth {
+    background-color:blanchedalmond;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="formsEvents.js"></script>
+    <title>Forms Events</title>
+</head>
+<body>
+        <h1 id="onFocus">When the form is selected or deselected,  it will fire an mesage through console.log</h1>
+        <input onfocus="actionOnFocus()" onblur="actionOnBlur()" type="text">
+        <br><hr>
+        
+        <h1>When the selection form is changed,  it will fire an mesage through console.log</h1>
+        
+        <select name="favouriteSport" onchange="actionOnChange()">
+            <option value="">Select your favourite sport</option>
+            <option value="Soccer">Soccer</option>
+            <option value="Golf">Golf</option>
+            <option value="F1">F1</option>
+            <option value="Other">Other</option>
+
+        </select>
+    
+</body>
+</html>

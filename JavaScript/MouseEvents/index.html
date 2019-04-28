@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="mouseEvents.js"></script>
+</head>
+<body>
+    <div onclick="actionOnClick()" onmouseout="actionMouseOut()" id="first">
+        <h1>Changes on click</h1>
+    </div>
+
+    <div ondblclick="actionDblClick()" id="second">
+        <h1>Changes on double click</h1>
+    </div>
+    <div onmouseup="actionMouseUp()" id="third">
+        <h1>Changes on mouse up</h1>
+    </div>
+    <div onmouseover="actionMouseOver()" id="forth">
+        <h1>Changes on move over</h1>
+    </div>
+    <div onmouseout="actionMouseOut()" id="fifth">
+        <h1>Changes on move out</h1>
+    </div>
+    
+</body>
+</html>

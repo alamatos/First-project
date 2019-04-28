@@ -1,0 +1,17 @@
+*{
+    width: 600px;
+    text-align: center;
+    
+}
+#onKeyDown {
+    font-family: 'Courier New', Courier, monospace
+}
+
+#onKeyPress {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+#onKeyUp {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
