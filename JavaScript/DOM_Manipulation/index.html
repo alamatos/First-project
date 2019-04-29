@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM Manipulation</title>
+    <script src="DomManipulation.js"></script>
+</head>
+<body>
+    <h1>Write some text</h1>
+    <input type="text" placeholder="Please insert some text" onkeyup="actionOnKeyUp()" id="WritedText">
+    <br><hr>
+    <h3>Letters:</h3>
+    <input type="text" placeholder="The letters you insert will come to here" disabled="disabled" id="JustLetters">
+    
+    <h3>Numbers:</h3>
+    <input type="text" placeholder="The numbers you insert will come to here" disabled="disabled" id="JustNumbers">
+    
+
+    <h1>Style manipulation</h1>
+
+    <button type="button" onclick="actionOnClick('red', '200px', '100px')" id="red">Red</button>
+    <button type="button"onclick="actionOnClick('green', '300px', '150px')" id="green">Green</button>
+    <button type="button" onclick="actionOnClick('blue','100px', '50px')" id="blue">Blue</button>
+
+    <div id="paintingArea">
+        <h5>Choose wisely the color you want to paint this area.</h5>
+
+    </div>
+
+    <div>
+        <p class="style1" id="paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sit.</p>
+        <button type="button" onclick="changeClass()">Apply different class</button>
+    </div>
+</body>
+</html>
