@@ -11,5 +11,8 @@
   "devDependencies": {
     "jest": "^24.8.0"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "latest-version": "^5.1.0"
+  }
 }
