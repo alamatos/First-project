@@ -1,0 +1,16 @@
+{
+  "name": "exercise2",
+  "version": "1.0.0",
+  "main": "exercise2.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "yarn": "^1.16.0"
+  }
+}
