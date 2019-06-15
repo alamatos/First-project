@@ -1,15 +1,19 @@
-function type(word) {
-    return  typeof(word)
+const functions = {
+    type: (word) => typeof (word),
+    whiteSpaces :(word) => {
+    let wordAnalysis = word.includes(' ')
+
+    if(wordAnalysis) {
+        return 'It has spaces'
+    } else{
+        return "It doesn't has spaces"
+    }
+    },
+    isANumber:(word) => {
+        let isANumber = typeof (word) === 'number' ? true : false
+        return isANumber
 }
 
-console.log(type('!!!'))
+}
 
- function whiteSpaces(word) {
-    let wordAnalysis = word.includes(' ') 
-    return wordAnalysis
- }
-
-console.log(whiteSpaces('4555'))
-
-
-module.exports = type
+module.exports = functions
