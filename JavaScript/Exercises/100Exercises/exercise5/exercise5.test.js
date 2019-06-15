@@ -1,5 +1,7 @@
-const functions = require('./exercise5')
-const functions2 = require('./exercise5')
+const rewire = require('rewire')
+const functions = rewire('./exercise5').__get__('functions')
+const isANumber = rewire('./exercise5').__get__('isANumber')
+
 
 
 
@@ -20,9 +22,9 @@ test("It should give true if what is typed has at least a space or false if it d
 })
 
 test('it should analyse if the given expression is a number or not', () => {
-    expect(functions2.isANumber(2)).toBeTruthy()
+    expect(isANumber(2)).toBeTruthy()
 })
 
 test('it should analyse if the given expression is a number or not', () => {
-    expect(functions2.isANumber('jon')).toBeFalsy()
+    expect(isANumber('jon')).toBeFalsy()
 })
