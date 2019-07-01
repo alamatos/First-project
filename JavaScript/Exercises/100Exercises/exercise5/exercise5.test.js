@@ -32,3 +32,27 @@ test('it should analyse if the given expression is a number or not - function', 
 test('it should analyse if the given expression is a number or not - function', () => {
     expect(numberAnalysis.secondPlace('jon')).toBeFalsy();
 })
+test('it should analyze if the given expression is alphabetic or not - numbers', () => {
+    expect(wordAnalysis.firstPlace.alphabetic(123)).toBeFalsy();
+})
+test('it should analyze if the given expression is alphabetic or not - whitespaces', () => {
+    expect(wordAnalysis.firstPlace.alphabetic(' ')).toBeFalsy();
+})
+test('it should analyze if the given expression is alphabetic or not - letters', () => {
+    expect(wordAnalysis.firstPlace.alphabetic('test')).toBeTruthy();
+})
+test('it should analyze if the given expression is alphanumeric or not', () => {
+    expect(wordAnalysis.firstPlace.alphanumeric('test')).toBeFalsy();
+})
+test('it should analyze if the given expression is alphanumeric or not', () => {
+    expect(wordAnalysis.firstPlace.alphanumeric('testin app')).toBeFalsy();
+})
+test('it should analyze if the given expression is alphanumeric or not', () => {
+    expect(wordAnalysis.firstPlace.alphanumeric('testing app 1')).toBeTruthy();
+})
+test('it should analyze if the given expression is all in uppercase or not', () => {
+    expect(wordAnalysis.firstPlace.alphanumeric('Testing app')).toBeFalsy();
+})
+test('it should analyze if the given expression is all in uppercase or not', () => {
+    expect(wordAnalysis.firstPlace.alphanumeric('TESTING APP')).toBeFalsy();
+})
